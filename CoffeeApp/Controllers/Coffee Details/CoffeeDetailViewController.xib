@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.AppleTV.XIB" version="3.0" toolsVersion="21507" targetRuntime="AppleTV" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="appleTV" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CoffeeDetailViewController" customModule="CoffeeApp" customModuleProvider="target">
+            <connections>
+                <outlet property="backButton" destination="Ted-eJ-IWM" id="PzQ-oR-sqX"/>
+                <outlet property="coffeeImageView" destination="bCJ-Gp-r6n" id="mUv-Pw-1QD"/>
+                <outlet property="descriptionLabel" destination="MtZ-Ly-edo" id="Blg-0D-eT5"/>
+                <outlet property="playVideoButton" destination="2HI-V7-boq" id="K0F-eh-DkU"/>
+                <outlet property="titleLabel" destination="ckc-zR-sgr" id="A6y-Dh-Swi"/>
+                <outlet property="view" destination="iN0-l3-epB" id="Eym-vH-oyN"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ckc-zR-sgr" userLabel="title">
+                    <rect key="frame" x="100" y="90" width="700" height="100"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="700" id="0Of-l8-CAJ"/>
+                        <constraint firstAttribute="height" constant="100" id="ZMO-Kv-ZcN"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="50"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MtZ-Ly-edo" userLabel="description">
+                    <rect key="frame" x="100" y="230" width="700" height="390"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="700" id="O5l-66-4cO"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="30"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="bCJ-Gp-r6n" userLabel="image">
+                    <rect key="frame" x="1100" y="120" width="600" height="600"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="600" id="3ae-QO-aFg"/>
+                        <constraint firstAttribute="width" constant="600" id="X7F-qF-Jb4"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2HI-V7-boq">
+                    <rect key="frame" x="1015" y="740" width="770" height="100"/>
+                    <color key="backgroundColor" systemColor="systemRedColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="100" id="Lda-QG-RDA"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="60"/>
+                    <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" title="Watch making video!"/>
+                    <connections>
+                        <action selector="playVideoAction:" destination="-1" eventType="primaryActionTriggered" id="gP8-cT-f6F"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ted-eJ-IWM">
+                    <rect key="frame" x="1281.5" y="865" width="237" height="100"/>
+                    <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="100" id="tvM-Vd-7WB"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="60"/>
+                    <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" title="Back">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="backButtonAction:" destination="-1" eventType="primaryActionTriggered" id="7Le-rd-tO8"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="nkI-NY-t1X"/>
+            <constraints>
+                <constraint firstItem="2HI-V7-boq" firstAttribute="centerX" secondItem="bCJ-Gp-r6n" secondAttribute="centerX" id="0RB-S4-iT0"/>
+                <constraint firstItem="Ted-eJ-IWM" firstAttribute="centerX" secondItem="2HI-V7-boq" secondAttribute="centerX" id="MT1-rw-qmK"/>
+                <constraint firstItem="bCJ-Gp-r6n" firstAttribute="top" secondItem="nkI-NY-t1X" secondAttribute="top" constant="60" id="NcX-fD-a0K"/>
+                <constraint firstItem="MtZ-Ly-edo" firstAttribute="leading" secondItem="nkI-NY-t1X" secondAttribute="leading" constant="20" id="RTt-n8-0Qx"/>
+                <constraint firstItem="ckc-zR-sgr" firstAttribute="top" secondItem="nkI-NY-t1X" secondAttribute="top" constant="30" id="U5e-FM-HCn"/>
+                <constraint firstItem="Ted-eJ-IWM" firstAttribute="top" secondItem="2HI-V7-boq" secondAttribute="bottom" constant="25" id="UMs-VW-CqZ"/>
+                <constraint firstItem="MtZ-Ly-edo" firstAttribute="top" secondItem="ckc-zR-sgr" secondAttribute="bottom" constant="40" id="Wbr-Pc-K6H"/>
+                <constraint firstItem="nkI-NY-t1X" firstAttribute="bottom" secondItem="MtZ-Ly-edo" secondAttribute="bottom" constant="400" id="hhF-9j-ySz"/>
+                <constraint firstItem="2HI-V7-boq" firstAttribute="top" secondItem="bCJ-Gp-r6n" secondAttribute="bottom" constant="20" id="jeQ-0l-JVO"/>
+                <constraint firstItem="ckc-zR-sgr" firstAttribute="leading" secondItem="nkI-NY-t1X" secondAttribute="leading" constant="20" id="jsO-Hh-Zqh"/>
+                <constraint firstItem="bCJ-Gp-r6n" firstAttribute="leading" secondItem="MtZ-Ly-edo" secondAttribute="trailing" constant="300" id="yG5-wE-jQf"/>
+            </constraints>
+            <point key="canvasLocation" x="-22" y="-35"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

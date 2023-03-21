@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.AppleTV.Storyboard" version="3.0" toolsVersion="21507" targetRuntime="AppleTV" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="8QP-XU-6zj">
+    <device id="appleTV" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="2da-X1-LQK">
+            <objects>
+                <navigationController id="8QP-XU-6zj" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="nKU-my-Uu3">
+                        <rect key="frame" x="0.0" y="60" width="1920" height="145"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="ygw-Ob-tsC"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HOi-Tm-YUc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1844" y="-1534"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CoffeeApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Coffee Encyclopedia" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="euq-BN-0qs">
+                                <rect key="frame" x="100" y="205" width="592" height="75"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="75" id="3NE-bb-TAw"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="55"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" sectionHeaderHeight="66" sectionFooterHeight="66" translatesAutoresizingMaskIntoConstraints="NO" id="0ER-1u-ggf">
+                                <rect key="frame" x="110" y="305" width="1700" height="700"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="wu6-TO-1qx"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="0ER-1u-ggf" firstAttribute="top" secondItem="euq-BN-0qs" secondAttribute="bottom" constant="25" id="0hF-KS-ano"/>
+                            <constraint firstItem="euq-BN-0qs" firstAttribute="top" secondItem="wu6-TO-1qx" secondAttribute="top" id="GSW-5U-DbQ"/>
+                            <constraint firstItem="wu6-TO-1qx" firstAttribute="bottom" secondItem="0ER-1u-ggf" secondAttribute="bottom" constant="15" id="M4b-tl-Ty3"/>
+                            <constraint firstItem="euq-BN-0qs" firstAttribute="leading" secondItem="wu6-TO-1qx" secondAttribute="leading" constant="20" id="NHe-Jy-ZLc"/>
+                            <constraint firstItem="wu6-TO-1qx" firstAttribute="trailing" secondItem="0ER-1u-ggf" secondAttribute="trailing" constant="30" id="Vdg-tO-Cu0"/>
+                            <constraint firstItem="0ER-1u-ggf" firstAttribute="leading" secondItem="wu6-TO-1qx" secondAttribute="leading" constant="30" id="ovl-M4-I4H"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Nfx-Ym-Oxh"/>
+                    <connections>
+                        <outlet property="tableView" destination="0ER-1u-ggf" id="12x-jd-iw1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="739" y="-1534"/>
+        </scene>
+    </scenes>
+</document>
